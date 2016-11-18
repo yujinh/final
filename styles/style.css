@@ -1,0 +1,40 @@
+body {
+	padding:0 0;
+	margin:0 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Header styling*/
+#navbar {
+	position:fixed;
+	background-color:#566c73;
+	width:100%;
+	top: 0;
+}
+#navbar ul {
+    margin: 0;
+    padding: 0;
+	list-style-type: none;
+}
+#navbar ul li {
+	float:left;
+}
+#navbar ul li a {
+	display:block;
+	text-align:center;
+    text-decoration: none;
+    padding: 14px 16px;
+	color:white;
+    font-size:100%;
+}
+#navbar ul li a:hover {
+	/* Change color on mouse hover */
+	color:#566c73;
+	background-color:white;
+}
+
+/*Content Styling*/
+#content {
+	margin-top:50px; /*Margin so that content doesn't appear behind header*/
+	height:1000px;
+}
