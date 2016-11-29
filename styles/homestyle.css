@@ -1,0 +1,22 @@
+#content {
+	background-color: rgba(255,104,4, 0.5);
+}
+
+#content img {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#eventdate {
+	height:150px;
+	width:50%;
+	text-align: center;
+}
+#dividor {
+	display:inline-block;
+}
+#eventdate .dateview {
+	display:inline-block;
+	margin-top:12px;
+}

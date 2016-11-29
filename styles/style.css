@@ -36,5 +36,41 @@ body {
 
 /*Content Styling*/
 #content {
-	margin-top:50px; /*Margin so that content doesn't appear behind header*/
+	margin-top:46px; /*Margin so that content doesn't appear behind header*/
+	width:80%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
 }
+
+/*Custom Objects*/
+
+/*Date View*/
+.dateview {
+	border: 1px solid black;
+	border-radius:5px;
+	width:75px;
+	height:75px;
+	background-color:white;
+	overflow:hidden;
+}
+.dateview p {
+	text-align:center;
+	margin:0;
+}
+.month {
+	font-size:1.2em;
+	height:25px;
+	background-color: red;
+	color:white;
+}
+.date {
+	font-size:2em;
+	font-weight: bold;
+	height:35px;
+}
+.day {
+	font-size:0.7em;
+	height:15px;
+}
+
