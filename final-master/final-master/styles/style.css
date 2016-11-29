@@ -1,0 +1,84 @@
+body {
+	padding:0 0;
+	margin:0 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #800000;
+}
+
+/*Header styling*/
+#navbar {
+	position:fixed;
+	background-color:#e6ac00; /*Background color of navigation bar.*/
+	width:100%;
+	top: 0;
+}
+#navbar ul {
+    margin: 0;
+    padding: 0;
+	list-style-type: none;
+}
+#navbar ul li {
+	float:left;
+}
+#navbar ul li a {
+	display:block;
+	text-align:center;
+    text-decoration: none;
+    padding: 14px 16px; /*First value adjusts height of navbar, second value adjusts width of each link.*/
+	color:white;	/*Color of text for links*/
+    font-size:100%;
+}
+#navbar ul li a:hover {
+	/* Change color on mouse hover */
+	color:#D4851C;
+	background-color:white; /*backgroundcolor of the links take when hovered on*/
+}
+
+/*Content Styling*/
+#content {
+	margin-top:46px; /*Margin so that content doesn't appear behind header*/
+	width:80%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#eventdate{
+    margin:0 auto;
+}
+/*Custom Objects*/
+
+/*Date View*/
+.dateview {
+	border: 1px solid black;
+	border-radius:5px;
+	width:75px;
+	height:75px;
+	background-color:white;
+	overflow:hidden;
+}
+.dateview p {
+	text-align:center;
+	margin:0;
+}
+.month {
+	font-size:1.2em;
+	height:25px;
+	background-color: red;
+	color:white;
+}
+.date {
+	font-size:2em;
+	font-weight: bold;
+	height:35px;
+}
+.day {
+	font-size:0.7em;
+	height:15px;
+}
+
+/*Home Page Text Styling */
+#blurb{
+    text-align: center;
+    font-family: "Verdana", sans-serif;
+}
