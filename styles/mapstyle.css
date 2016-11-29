@@ -37,6 +37,7 @@
 #map {
 	width:100%;
 	height:90%;
+	z-index: -1;
 }
 #mapcontainer a {
 	text-decoration:none;
