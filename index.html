@@ -5,7 +5,7 @@
 		<title>Home</title>
 		<link rel="stylesheet" href="styles/style.css">
 		<link rel="stylesheet" href="styles/homestyle.css">
-    	<link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+    	<link href="http://addtocalendar.com/atc/1.5/atc-style-glow-orange.css" rel="stylesheet" type="text/css">
 	    <script src="js/main.js" type="text/javascript"></script>
 	</head>
 	<body>
@@ -24,7 +24,7 @@
 			<div id="eventdate">
 				<div id="eventdateviewer">
 				From:
-				<div class="dateview">
+				<div class="dateview"> <!--Custom Made View-->
 					<p class="month">SEP</p> <!--First 3 letters of month-->
 					<p class="date">30</p> <!--Day of month-->
 					<p class="day">FRI</p> <!--Abbreviation of day of week-->
@@ -37,8 +37,15 @@
 				</div>
 			</div>
 			<div id="addtocalendar">	
-				<script>initAddToCalendar();</script>
-    			<span class="addtocalendar atc-style-blue">
+				<script type="text/javascript">(function () {
+				            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+				            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+				                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+				                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+				                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+				                var h = d[g]('body')[0];h.appendChild(s); }})();
+				 </script>
+    			<span class="addtocalendar atc-style-glow-orange">
 					<var class="atc_event">
             			<var class="atc_date_start">2016-9-30 12:00:00</var>
 						<var class="atc_date_end">2016-10-2 18:00:00</var>
