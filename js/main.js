@@ -22,7 +22,7 @@ function initAddToCalendar() {
         s.type = 'text/javascript';
 		s.charset = 'UTF-8';
 		s.async = true;
-        s.src = ('https:' == window.location.protocol ? 'https' : 'http') + '://addtocalendar.com/atc/1.5/atc.min.js';
+        s.src = 'https://addtocalendar.com/atc/1.5/atc.min.js';
         var h = d[g]('body')[0];h.appendChild(s); 
 	}
 }
