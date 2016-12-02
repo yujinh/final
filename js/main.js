@@ -10,3 +10,7 @@ function initMap() {
         map: map
     });
 }
+
+function collapse(targetclass) {
+	$('.' + targetclass).slideToggle();
+}
