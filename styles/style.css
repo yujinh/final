@@ -2,13 +2,13 @@ body {
 	padding:0 0;
 	margin:0 0;
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: rgba(255,104,4,0.3);
+	background-color: #800000;
 }
 
 /*Header styling*/
 #navbar {
 	position:fixed;
-	background-color:#D4851C; /*Background color of navigation bar.*/
+	background-color:#e6ac00; /*Background color of navigation bar.*/
 	width:100%;
 	top: 0;
 }
@@ -43,6 +43,9 @@ body {
 	margin-right:auto;
 }
 
+#eventdate{
+    margin:0 auto;
+}
 /*Custom Objects*/
 
 /*Date View*/
@@ -74,3 +77,8 @@ body {
 	height:15px;
 }
 
+/*Home Page Text Styling */
+#blurb{
+    text-align: center;
+    font-family: "Verdana", sans-serif;
+}
