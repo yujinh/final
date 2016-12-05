@@ -12,24 +12,37 @@
 	function turnDataIntoArray($data) {
 		$list = array();
 		foreach ($data as $line) { //For each array in data, get first value to be the key and the second value to be the value
-			$list[$line[0]] = $line[1] + ': ' + $line[2];
+			$day = $line[0];
+			$time = $line[1];
+			$artist = $line[2];
+			
+			$performance = array();
+			$performance[] = $time;
+			$performance[] = $artist;
+			
+			if (!array_key_exists($day, $list)) {
+				$list[$day] = array();
+			}
+			$list[$day][] = $performance;
 		}
-		ksort($list); //Sort elements in array in alphabetical order
+		//ksort($list); //Sort elements in array in alphabetical order
 		return $list;
 	}
 	function createTableElement($list) {
 		echo "<dl>";
 		$i = 0;
-		foreach ($list as $key=>$value) { //For each key value pair in the list, print the keys in bold and print the values
+		foreach ($list as $day=>$performers) { //For each key value pair in the list, print the keys in bold and print the values
 			$i++;
-			echo "<dt>".$key."</dt>";
-			echo "<dd class=\"$i\">".$value."</dd>";
+			echo "<dt onclick=\"collapse($i);\">".$day."</dt>";
+			foreach ($performers as $time_artist) {
+				echo "<dd class=\"$i\"><span class=\"time\">".$time_artist[0]
+					."</span><span class=\"artist\">".$time_artist[1]."</span></dd>";
+			}
 		}
 		echo "</dl>";
 	}
 	//Call all three functions
 	$data = getFileContents();
 	$list = turnDataIntoArray($data);
-	createTableElement($list); 
-	echo"ALSKDJOASDJALSDKALSKDMASD";
+	createTableElement($list);
 ?>

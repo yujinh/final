@@ -25,15 +25,6 @@
 				<?php
 					include 'scripts/schedulereader.php';
 				?>
-				<dt onclick="collapse(1);">FRIDAY</dt>
-				<dd class="1">First guy</dd>
-				<dd class="1">Second guy</dd>
-				<dt onclick="collapse(2);">SATURDAY</dt>
-				<dd class="2">Third guy</dd>
-				<dd class="2">Fourth guy</dd>
-				<dt onclick="collapse(3);">SUNDAY</dt>
-				<dd class="3">Fifth guy</dd>
-				<dd class="3">Sixth guy</dd>
 			</dl>
 		</div>
 	</body>

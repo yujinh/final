@@ -1,4 +1,15 @@
+dt {
+	cursor: pointer;
+	font-size: 2em;
+}
 dd {
 	display: none;
 	color: white;
+}
+.time {
+	padding-right:20px;
+}
+
+.artist {
+	
 }
